@@ -1,0 +1,17 @@
+package io.natsusai.packagescanner.annotation;
+
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+/**
+ * @author liufuhong
+ * @since 2019-06-04 9:31
+ */
+
+@Target({METHOD, TYPE})
+@Retention(RUNTIME)
+public @interface Consumer {}
